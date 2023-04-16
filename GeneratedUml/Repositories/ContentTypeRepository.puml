@@ -1,0 +1,6 @@
+@startuml
+class ContentTypeRepository {
+    + ContentTypeRepository(dataContext:DataContext)
+}
+ContentTypeRepository --> "_dataContext" DataContext
+@enduml

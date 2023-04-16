@@ -1,0 +1,14 @@
+@startuml
+class ArticlesController {
+    + ArticlesController(articleCreateService:ArticleCreateService, articleService:ArticleService, dataContext:DataContext)
+    + <<async>> Create(model:Article) : Task<IActionResult>
+    + <<async>> GetAll() : Task<IActionResult>
+    + <<async>> Get(id:int) : Task<IActionResult>
+    + Update(id:int, model:Article) : IActionResult
+    + <<async>> Delete(id:int) : Task<IActionResult>
+}
+ControllerBase <|-- ArticlesController
+ArticlesController --> "_articlesCreateService" ArticleCreateService
+ArticlesController --> "_articleService" ArticleService
+ArticlesController --> "_dataContext" DataContext
+@enduml

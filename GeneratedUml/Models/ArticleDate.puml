@@ -1,0 +1,6 @@
+@startuml
+class ArticleDate {
+}
+ArticleDate o-> "CreatedAt" DateTime
+ArticleDate o-> "UpdatedAt" DateTime
+@enduml

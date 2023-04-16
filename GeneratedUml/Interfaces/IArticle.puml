@@ -1,0 +1,7 @@
+@startuml
+interface IArticle {
+    + Title : string <<get>> <<set>>
+    + Description : string <<get>> <<set>>
+    + Author : string <<get>> <<set>>
+}
+@enduml

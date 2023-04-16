@@ -1,0 +1,6 @@
+@startuml
+class ContentTypeEntity {
+    + Id : int <<get>> <<set>>
+    + Category : string <<get>> <<set>>
+}
+@enduml

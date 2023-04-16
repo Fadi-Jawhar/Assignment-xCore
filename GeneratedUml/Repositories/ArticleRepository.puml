@@ -1,0 +1,7 @@
+@startuml
+class ArticleRepository {
+    + ArticleRepository(dataContext:DataContext)
+    + <<async>> CreateArticleAsync(article:ArticleEntity) : Task<bool>
+}
+ArticleRepository --> "_dataContext" DataContext
+@enduml

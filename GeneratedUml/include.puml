@@ -1,0 +1,22 @@
+@startuml
+!include .\\Program.puml
+!include .\\Contexts\DataContext.puml
+!include .\\Controllers\ArticlesController.puml
+!include .\\Controllers\ContentTypesController.puml
+!include .\\Interfaces\IArticle.puml
+!include .\\Migrations\20230411144137_init.puml
+!include .\\Migrations\20230411144137_init.Designer.puml
+!include .\\Migrations\20230416183254_functions.puml
+!include .\\Migrations\20230416183254_functions.Designer.puml
+!include .\\Migrations\DataContextModelSnapshot.puml
+!include .\\Models\Article.puml
+!include .\\Models\ArticleDate.puml
+!include .\\Models\ContentType.puml
+!include .\\Repositories\ArticleRepository.puml
+!include .\\Repositories\ContentTypeRepository.puml
+!include .\\Services\ArticleCreateService.puml
+!include .\\Services\ArticleService.puml
+!include .\\Services\ContentTypeService.puml
+!include .\\Models\Entities\ArticleEntity.puml
+!include .\\Models\Entities\ContentTypeEntity.puml
+@enduml

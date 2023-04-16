@@ -1,0 +1,10 @@
+@startuml
+class ContentTypesController {
+    + ContentTypesController(contentTypeService:ContentTypeService, dataContext:DataContext)
+    + <<async>> Create(model:ContentType) : Task<IActionResult>
+    + <<async>> GetAllByType(Category:int) : Task<IActionResult>
+}
+ControllerBase <|-- ContentTypesController
+ContentTypesController --> "_contentTypeService" ContentTypeService
+ContentTypesController --> "_dataContext" DataContext
+@enduml
